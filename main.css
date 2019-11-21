@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Martel|Rokkitt&display=swap');
+
+/* 
+font-family: 'Rokkitt', serif; 
+font-family: 'Martel', serif;
+*/
+
+
+/* ------------- selector universal --------------- 
+este selector cambia a todos los elementos 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rokkitt', serif;
+    background: #fafafa;
+}
+
+ul,li{
+    list-style: none;
+}
+
+/* ------------- header-navegador ---------------- */
+.header{
+    background: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-header{
+    color: black;
+    display: block;
+    padding: 20px;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.navegador > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navegador > ul > li > a,.navegador > ul > li:nth-child(1){
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s all;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.navegador > ul > li > a:hover,.navegador > ul > li:nth-child(1):hover{
+    color: royalblue;
+    text-shadow: 1px 1px 4px black;
+}
+
+/* -------------- main ------------------ */
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.aside{
+    width: 20%;
+    padding: 5px;
+}
+
+.section{
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.article{
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgray;
+}
+
+.article > h2,.article > h3{
+    text-align: center;
+}
+
+.imagen{
+    display: block;
+    margin: auto;
+}
+
+.video{
+    margin: auto;  
+}
+
+/* --------------- footer --------------- */
+
+.footer p{
+    display: block;
+    text-align: center;
+    padding: 60px;
+}
